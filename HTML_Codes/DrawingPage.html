@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<title>The Box - Drawing Pad</title>
+		<link rel = "icon" href = "OrangeLogo3.png" type = "image/x-icon">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			
+			.topnav {
+			  overflow: hidden;
+			  background-color: Black;
+			}
+
+			.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: left;
+			  padding: 20px 60px;
+			  text-decoration: none;
+			  font-size: 18px;
+			}
+
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+
+			.topnav a.active {
+			  background-color: #04AA6D;
+			  color: white;
+			}
+			
+			.topnav img {
+				float: left;
+				padding: 10px 10px;
+			}
+			
+			.topnav h3 {
+				float: left;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 0px 5px;
+				text-decoration: none;
+				font-size: 22px;
+				font-family: Roboto;
+			}
+			
+			.topnav p {
+				float: right;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 0px 5px;
+				text-decoration: none;
+				font-size: 15px;
+				font-family: Roboto;
+			}
+			
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  background-color: #FFFBFB;
+			  font-family: "Poppins", sans-serif;
+			  display: flex;
+			  height: 100vh;
+			  overflow: hidden;
+			  margin: 0;
+			}
+
+			button {
+			  background-color: #8e44ad;
+			  color: #fff;
+			  border: none;
+			  display: block;
+			  width: 100%;
+			  cursor: pointer;
+			  font-size: 1.1rem;
+			  font-family: inherit;
+			  padding: 1.3rem;
+			}
+
+			button:hover {
+			  background-color: #732d91;
+			}
+
+			button:focus {
+			  outline: none;
+			  background-color: #5e3370;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topnav">
+			<img src = "OrangeLogo2.png">
+			<h3>The Box</h3><br>
+			<a href="aboutus.html">About Us</a><br>
+			<a href="instructions.html">Instructions</a>
+			<p> Welcome to the Drawing Art Pad: Bored Paint!</p>
+			<p>You can click on the '+' and '-' sign to increase and decrease the thickness of the brush</p>
+			<p>Color of the brush can be changed by choosing whichever one you like from the palette provided</p>
+			<p>To clear the screen, click on the 'X' option</p>
+			<p>The eraser will improve in the next update! Stay Tuned</p>
+		</div>
+		
+		<canvas id="canvas" width="900" height="600">
+		</canvas>
+		<div class="toolbox" style = "padding:0px 30px; background-color: black; color: white">
+			<a href = "fictionalfun.html">
+				<img src = "WhiteBox(1).png" style ="padding:30px 30px;float:right;">
+			</a>
+			<br><br>
+			Eraser: <input type="checkbox" id="myCheck" onclick="myFunction()">
+			<h4><b>Decrease Size</b></h4>
+			<button id="decrease">-</button>
+			<h4><b>Increase Size</b></h4>
+			<button id="increase">+</button><br>
+			<span id="size"> 10</span>
+			<h4><b>Color of Pen</b></h4>
+			<input type="color" id="color"><br>
+			<h4><b>Clear Screen</b></h4>
+			<button id="clear">X</button>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+		
+	</body>
+</html>
